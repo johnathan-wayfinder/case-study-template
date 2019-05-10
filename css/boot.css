@@ -1,13 +1,6 @@
 * { -webkit-tap-highlight-color: rgba(0,0,0,0); box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-* { cursor: none!important; }
-*:hover, *:active{ cursor: none!important; }
 
-:root{
-    --cursor-rad: 16px;
-    --duration: .2s;
-}
-
-body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; background-color:#fff; font-family: 'Roboto', sans-serif; font-weight: 400; color:#444444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;  }
+body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; background-color:#fff; font-family: 'Roboto', sans-serif; font-weight: 400; color:#444444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px; overflow-x: hidden; }
 
 @font-face {
   font-family: Replica-Bold;
@@ -25,7 +18,7 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
   font-style: normal
 }
 
-.p-t0-5 { padding-top: 4px; }
+/* .p-t0-5 { padding-top: 4px; }
 .p-t1 { padding-top: 8px; }
 .p-t1-5 { padding-top: 12px; }
 .p-t2 { padding-top: 16px; }
@@ -110,4 +103,4 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
 
 .font-color-white { color: #fff; }
 
-.cursor-pointer { cursor: pointer; }
+.cursor-pointer { cursor: pointer; } */

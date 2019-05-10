@@ -1,56 +1,3 @@
-body {
-  overflow-x: hidden; }
-  @media (min-width: 768px) {
-    body {
-      /*background: yellow;*/ } }
-
-.cursor {
-  --size: 20px;
-  height: var(--size);
-  width: var(--size);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  pointer-events: none; }
-
-.cursor.cursor-shadow {
-  background: #FF5252;
-  transition: top .25s, left .25s, width .5s, height .5s, background .15s;
-  transition-timing-function: ease-out; }
-
-.cursor.cursor-shadow2 {
-  display: none;
-  background: #FF5252;
-  transition: top .50s, left .50s, width .10s, height .10s, background .70s;
-  transition-timing-function: ease-out; }
-
-.cursor.cursor-dot {
-  /*background: #FF5252;*/
-  transition: width .25s, height .25s; }
-
-.cursor-shadow.active {
-  --size: 80px;
-  z-index: -1;
-  /*   transition:all 0.2s ease; */ }
-
-.cursor-shadow2.active {
-  --size: 0px;
-  /*   transition:all 0.2s ease; */ }
-
-.cursor-dot.active {
-  --size: 0; }
-
-/** ELEMENTS EFFECT **/
-[class*=link-] {
-  transition: all ease var(--duration);
-  -webkit-user-select: none;
-  user-select: none; }
-
-[class*=link-]:hover {
-  /*opacity: .3;*/
-  color: #fff; }
-
 h1 {
   font-size: 34px;
   line-height: 42px;
@@ -180,7 +127,6 @@ ul li::before {
       margin-left: -1em; } }
 
 .wf-grid {
-  display: none;
   position: fixed;
   width: 100vw;
   height: 100%;
@@ -307,6 +253,7 @@ ul li::before {
       list-style: none; }
       .top-header .menu ul li {
         margin-left: 40px;
+        margin-bottom: 0px;
         cursor: pointer; }
     .top-header .menu ul li::before {
       display: none; }
@@ -329,31 +276,6 @@ ul li::before {
     height: 14px;
     right: 0px;
     margin: 25px 20px; }
-
-.copyrite {
-  position: fixed;
-  bottom: 13px;
-  right: 10.5px;
-  font-size: 9px;
-  opacity: .8;
-  transform: translateY(85%) rotate(90deg);
-  transform-origin: bottom right; }
-  @media (min-width: 768px) {
-    .copyrite {
-      transform: none;
-      bottom: 0px;
-      right: 0px;
-      font-size: 14px;
-      padding: 16px 30px; } }
-  @media (min-width: 1280px) {
-    .copyrite {
-      padding: 16px 40px; } }
-  @media (min-width: 1440px) {
-    .copyrite {
-      padding: 16px 40px; } }
-  @media (min-width: 1600px) {
-    .copyrite {
-      padding: 16px 40px; } }
 
 .mobile-menu {
   display: none;
@@ -388,12 +310,37 @@ ul li::before {
     .mobile-menu .menu ul li::before {
       display: none; }
 
+.copyrite {
+  position: fixed;
+  bottom: 13px;
+  right: 10.5px;
+  font-size: 9px;
+  opacity: .8;
+  transform: translateY(85%) rotate(90deg);
+  transform-origin: bottom right; }
+  @media (min-width: 768px) {
+    .copyrite {
+      transform: none;
+      bottom: 0px;
+      right: 0px;
+      font-size: 14px;
+      padding: 16px 30px; } }
+  @media (min-width: 1280px) {
+    .copyrite {
+      padding: 16px 40px; } }
+  @media (min-width: 1440px) {
+    .copyrite {
+      padding: 16px 40px; } }
+  @media (min-width: 1600px) {
+    .copyrite {
+      padding: 16px 40px; } }
+
 .header {
   display: flex;
   justify-content: center;
   position: relative;
   /*background: $light-grey;*/
-  background: url(../img/hero.jpg) no-repeat;
+  background: url(https://images.alphacoders.com/484/484212.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100vw; }
@@ -504,17 +451,24 @@ ul li::before {
   @media (min-width: 1600px) {
     .container {
       padding: 88px 0 0 0; } }
+  .container .row {
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+    background: #fff; }
+    @media (min-width: 768px) {
+      .container .row {
+        width: auto;
+        padding-bottom: 88px; } }
+    @media (min-width: 1280px) {
+      .container .row {
+        padding-bottom: 96px; } }
   .container .c-standard {
     position: relative;
-    width: 100%;
-    padding: 0 0 40px; }
-    @media (min-width: 768px) {
-      .container .c-standard {
-        padding: 0 0 88px; } }
+    width: 100%; }
     @media (min-width: 1280px) {
       .container .c-standard {
-        width: 590px;
-        padding: 0 0 96px 0; } }
+        width: 590px; } }
     @media (min-width: 1440px) {
       .container .c-standard {
         width: 670px; } }
@@ -631,11 +585,13 @@ ul li::before {
     overflow: hidden;
     background: #E1E8EE;
     width: 112%;
-    height: 210px; }
+    height: 210px;
+    margin-left: -20px; }
     @media (min-width: 768px) {
       .container .img-full-w {
         width: 100%;
-        height: 396px; } }
+        height: 396px;
+        margin-left: 0px; } }
     @media (min-width: 1280px) {
       .container .img-full-w {
         width: 794px;
@@ -708,14 +664,12 @@ ul li::before {
     width: 100%;
     font-size: 12px;
     color: #FF5252;
-    padding-top: 12px;
-    padding-bottom: 40px; }
+    padding-top: 12px; }
     @media (min-width: 768px) {
       .container .caption-copy {
         width: 72%;
         font-size: 16px;
         padding-top: 20px;
-        padding-bottom: 96px;
         line-height: 24px; } }
   .container .spacer {
     position: relative;
@@ -730,11 +684,7 @@ ul li::before {
       .container .spacer-small {
         height: 8px; } }
   .container .img-list {
-    position: relative;
-    padding-bottom: 40px; }
-    @media (min-width: 768px) {
-      .container .img-list {
-        padding-bottom: 96px; } }
+    position: relative; }
     .container .img-list ul {
       display: flex;
       height: 188px;
@@ -803,66 +753,6 @@ ul li::before {
     @media (min-width: 1440px) {
       .container .p-tp {
         padding-top: 32px; } }
-  .container .img-progress {
-    background: url(../img/progress.jpg) no-repeat;
-    background-size: cover;
-    background-position: center top; }
-  .container .setf-screenshot, .container .setf-sketch, .container .setf-sketch-nav {
-    position: absolute; }
-  .container .challenge-list-1 {
-    background: url(../img/challenge-img-list-1.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .challenge-list-2 {
-    background: url(../img/challenge-img-list-2.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .challenge-list-3 {
-    background: url(../img/challenge-img-list-3.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .challenge-list-4 {
-    background: url(../img/challenge-img-list-4.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-global-themes {
-    background: url(../img/global-themes.jpg) no-repeat !important;
-    background-size: contain !important;
-    background-position: center top !important; }
-    @media (min-width: 768px) {
-      .container .img-global-themes {
-        border: none;
-        background-size: cover !important; } }
-  .container .img-solution {
-    background: url(../img/solution-saskia.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center; }
-  .container .img-solution-w-1 {
-    background: url(../img/solution-wireframe1.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-solution-w-2 {
-    background: url(../img/solution-wireframe2.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-results-homepage {
-    background: url(../img/results-homepage.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-results-register {
-    background: url(../img/results-register.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-results-vehicle-detail {
-    background: url(../img/results-vehicle.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-results-help-center {
-    background: url(../img/results-help.jpg) no-repeat !important;
-    background-size: cover !important;
-    background-position: center top !important; }
-  .container .img-effect {
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16); }
 
 .work-with-us {
   display: flex;
@@ -898,3 +788,68 @@ ul li::before {
     @media (min-width: 1440px) {
       .work-with-us .p-tp {
         padding-top: 32px; } }
+
+.img-progress {
+  background: url(https://www.indiewire.com/wp-content/uploads/2016/07/samuel-l-jackson-in-pulp-fiction.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top; }
+
+.setf-screenshot, .setf-sketch, .setf-sketch-nav {
+  position: absolute; }
+
+.challenge-list-1 {
+  background: url(https://vignette.wikia.nocookie.net/villains/images/2/2f/Glass-samuel-l-jackson1.jpg/revision/latest?cb=20190210202111) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.challenge-list-2 {
+  background: url(https://www.space.ca/wp-content/uploads/2017/11/Unbreakable.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.challenge-list-3 {
+  background: url(https://www.movienewsnet.com/wp-content/uploads/2019/01/Glass-1.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.challenge-list-4 {
+  background: url(https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a0334a99140b7583645e193/1510159532141/?format=2500w) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.img-global-themes {
+  background: url(../img/global-themes.jpg) no-repeat !important;
+  background-size: contain !important;
+  background-position: center top !important; }
+  @media (min-width: 768px) {
+    .img-global-themes {
+      border: none;
+      background-size: cover !important; } }
+
+.img-solution {
+  background: url(https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5b6c578c6d2a73d8b858effe/1533826960027/?format=2500w) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.img-solution-w-1 {
+  background: url(https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d428b7b3d6a_-_esq-deep-de.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.img-solution-w-2 {
+  background: url(https://media.giphy.com/media/SbsHOPT5DgAog/giphy.gif) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.img-results-homepage {
+  background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/09/14/snap.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.img-results-register {
+  background: url(https://i.pinimg.com/originals/b8/2c/9a/b82c9ac2b0bf462de984ba19563c2463.jpg) no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; }
+
+.img-effect {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16); }

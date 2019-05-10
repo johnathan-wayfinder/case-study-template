@@ -1,0 +1,107 @@
+.container { display: flex; flex-direction: column; align-items: center; position: relative; padding: 48px 20px 0;
+  @include respond-to(tablet-w) { padding: 80px 32px 0; }
+  @include respond-to(desktop-w-s) { padding: 96px 0 0 0; }
+  @include respond-to(desktop-w-xl) { padding: 88px 0 0 0; }
+  .row { width: 100%; position: relative; padding-bottom: 40px; background: #fff;
+    @include respond-to(tablet-w) { width: auto; padding-bottom: 88px; }
+    @include respond-to(desktop-w-s) { padding-bottom: 96px; }
+  }
+  .c-standard { position: relative; width: 100%;
+    @include respond-to(desktop-w-s) { width: 590px; }
+    @include respond-to(desktop-w-normal) { width: 670px; }
+    @include respond-to(desktop-w-xl) { width: 620px; }
+  }
+  .c-split { display: flex; flex-direction: column; position: relative; width: 100%;
+    @include respond-to(tablet-w) { flex-direction: row; justify-content: space-between; align-items: center; width: 100%; height: 348px; }
+    @include respond-to(desktop-w-s) { width: 794px; height: 386px; }
+    @include respond-to(desktop-w-normal) { width: 900px; height: 440px; }
+    @include respond-to(desktop-w-xl) { width: 910px; height: 446px; }
+    .c-split-content { position: relative; width: 100%; padding-bottom: 40px;
+      @include respond-to(tablet-w) { width: 46%; padding-bottom: 0px; }
+    }
+    .c-split-img { position: relative; width: 100%; height: 280px; background: $cloud-grey;
+      @include respond-to(tablet-w) { width: 49%; height: 348px; }
+      @include respond-to(desktop-w-s) { height: 386px; }
+      @include respond-to(desktop-w-normal) { height: 440px; }
+      @include respond-to(desktop-w-xl) { height: 446px; }
+    }
+  }
+  .c-img-split { display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: relative; width: 100%;
+    @include respond-to(desktop-w-s) { width: 794px; }
+    @include respond-to(desktop-w-normal) { width: 900px; }
+    @include respond-to(desktop-w-xl) { width: 910px; }
+    .c-img { position: relative; width: 47.8%; height: 188px; background: $cloud-grey;
+      @include respond-to(tablet-w) { height: 414px; }
+      @include respond-to(desktop-w-s) { height: 468px; }
+      @include respond-to(desktop-w-normal) { height: 506px; }
+      @include respond-to(desktop-w-xl) { height: 536px; }
+    }
+  }
+  .img { position: relative; overflow: hidden; width: 100%; height: 188px;
+    @include respond-to(tablet-w) { width: 100%; height: 396px; }
+    @include respond-to(desktop-w-s) { width: 794px; height: 447px; }
+    @include respond-to(desktop-w-normal) { width: 900px; height: 506px; }
+    @include respond-to(desktop-w-xl) { width: 910px; height: 512px; }
+  }
+  .img-full-w { position: relative; overflow: hidden; width: 112%; height: 210px; margin-left: -20px;
+    @include respond-to(tablet-w) { width: 100%; height: 396px; margin-left: 0px; }
+    @include respond-to(desktop-w-s) { width: 794px; height: 447px; }
+    @include respond-to(desktop-w-normal) { width: 900px; height: 506px; }
+    @include respond-to(desktop-w-xl) { width: 910px; height: 512px; }
+  }
+  .img-plus-mobile-height { height: 280px;
+    @include respond-to(tablet-w) { width: 100%; height: 396px; }
+    @include respond-to(desktop-w-s) { width: 794px; height: 447px; }
+    @include respond-to(desktop-w-normal) { width: 900px; height: 506px; }
+    @include respond-to(desktop-w-xl) { width: 910px; height: 512px; }
+  }
+  .caption { position: relative; width: 100%;
+    @include respond-to(tablet-w) { width: 100%; }
+    @include respond-to(desktop-w-s) { width: 794px; }
+    @include respond-to(desktop-w-normal) { width: 900px; }
+    @include respond-to(desktop-w-xl) { width: 910px; }
+  }
+  .caption-full-w { position: relative; width: 112%;
+    @include respond-to(tablet-w) { width: 100%; }
+    @include respond-to(desktop-w-s) { width: 794px; }
+    @include respond-to(desktop-w-normal) { width: 900px; }
+    @include respond-to(desktop-w-xl) { width: 910px; }
+    .caption-copy { padding-left: 8px; padding-right: 8px;
+      @include respond-to(tablet-w) { padding-left: 0px; padding-right: 0px; }
+    }
+  }
+  .caption-copy { position: relative; width: 100%; font-size: 12px; color: $findyourway-color; padding-top: 12px;
+    @include respond-to(tablet-w) { width: 72%; font-size: 16px; padding-top: 20px; line-height: 24px; }
+  }
+  .spacer { position: relative; height: 40px;
+    @include respond-to(tablet-w)  { height: 96px; }
+  }
+  .spacer-small { position: relative; height: 0px;
+    @include respond-to(tablet-w)  { height: 8px; }
+  }
+  .img-list { position: relative;
+    ul { display: flex; height: 188px; margin:0; padding: 0px;
+      @include respond-to(tablet-w) { height: 414px; }
+      @include respond-to(desktop-w-s) { height: 468px; }
+      @include respond-to(desktop-w-normal) { height: 506px; }
+      @include respond-to(desktop-w-xl) { height: 536px; }
+      li { display: flex; justify-content: center; align-items: center; background: $cloud-grey; width: 157px; height: 188px; list-style: none; float: left; margin: 0 10px; border-radius: 0px; box-shadow: 0 16px 8px -12px rgba(0, 0, 0, 0.0);
+        @include respond-to(tablet-w) { width: 345px; height: 414px; margin: 0 10px; }
+        @include respond-to(desktop-w-s) { width: 378px; height: 468px; margin: 0 28px; }
+        @include respond-to(desktop-w-normal) { width: 422px; height: 506px; margin: 0 28px; }
+        @include respond-to(desktop-w-xl) { width: 428px; height: 536px; }
+      }
+      li::before { display:none; }
+    }
+  }
+  .mobile-order1 { order: 1;
+    @include respond-to(tablet-w) { order: 0; }
+  }
+  .mobile-display-none { display: none !important;
+    @include respond-to(desktop-w-s) { display: block !important; }
+  }
+  .p-tp { padding-top: 16px;
+    @include respond-to(tablet-w) { padding-top: 24px; }
+    @include respond-to(desktop-w-normal) { padding-top: 32px; }
+  }
+}

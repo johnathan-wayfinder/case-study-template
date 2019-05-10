@@ -1,0 +1,19 @@
+.img-progress { background: url(https://www.indiewire.com/wp-content/uploads/2016/07/samuel-l-jackson-in-pulp-fiction.jpg) no-repeat; background-size: cover; background-position: center top; }
+.setf-screenshot, .setf-sketch, .setf-sketch-nav { position: absolute; }
+.challenge-list-1 { background: url(https://vignette.wikia.nocookie.net/villains/images/2/2f/Glass-samuel-l-jackson1.jpg/revision/latest?cb=20190210202111) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.challenge-list-2 { background: url(https://www.space.ca/wp-content/uploads/2017/11/Unbreakable.jpg) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.challenge-list-3 { background: url(https://www.movienewsnet.com/wp-content/uploads/2019/01/Glass-1.jpg) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.challenge-list-4 { background: url(https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a0334a99140b7583645e193/1510159532141/?format=2500w) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.img-global-themes { background: url(../img/global-themes.jpg) no-repeat !important; background-size: contain !important; background-position: center top !important;
+  @include respond-to(tablet-w) { border: none; background-size: cover !important; }
+}
+.img-solution { background: url(https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5b6c578c6d2a73d8b858effe/1533826960027/?format=2500w) no-repeat; background-size: cover; background-position: center center; }
+.img-solution-w-1 { background: url(https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d428b7b3d6a_-_esq-deep-de.jpg) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.img-solution-w-2 { background: url(https://media.giphy.com/media/SbsHOPT5DgAog/giphy.gif) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.img-results-homepage { background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/09/14/snap.jpg) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+.img-results-register { background: url(https://i.pinimg.com/originals/b8/2c/9a/b82c9ac2b0bf462de984ba19563c2463.jpg) no-repeat !important; background-size: cover !important; background-position: center top !important; }
+
+.img-effect {
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16);
+  // border: 2px solid #E1E8EE;
+}
