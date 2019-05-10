@@ -1,3 +1,37 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #444444;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0px;
+  overflow-x: hidden; }
+
+@font-face {
+  font-family: Replica-Bold;
+  src: url(../fonts/lineto-replica-bold.eot);
+  src: url(../fonts/lineto-replica-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/lineto-replica-bold.woff2) format("woff2"), url(../fonts/lineto-replica-bold.woff) format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Replica-Bold-S;
+  src: url(../fonts/fonts_subsetted/lineto-replica-bold.eot);
+  src: url(../fonts/fonts_subsetted/lineto-replica-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/fonts_subsetted/lineto-replica-bold.woff2) format("woff2"), url(../fonts/fonts_subsetted/lineto-replica-bold.woff) format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
 h1 {
   font-size: 34px;
   line-height: 42px;
