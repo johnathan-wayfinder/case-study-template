@@ -3,8 +3,8 @@
   @include respond-to(desktop-w-s) { padding: 96px 0 0 0; }
   @include respond-to(desktop-w-xl) { padding: 88px 0 0 0; }
   .row { width: 100%; position: relative; padding-bottom: 40px; background: #fff;
-    @include respond-to(tablet-w) { width: auto; padding-bottom: 88px; }
-    @include respond-to(desktop-w-s) { padding-bottom: 96px; }
+    @include respond-to(tablet-w) { padding-bottom: 88px; }
+    @include respond-to(desktop-w-s) { width: auto; padding-bottom: 96px; }
   }
   .c-standard { position: relative; width: 100%;
     @include respond-to(desktop-w-s) { width: 590px; }
@@ -35,6 +35,15 @@
       @include respond-to(desktop-w-s) { height: 468px; }
       @include respond-to(desktop-w-normal) { height: 506px; }
       @include respond-to(desktop-w-xl) { height: 536px; }
+    }
+  }
+  .c-quote { position: relative; width: 100%;
+    @include respond-to(desktop-w-s) { width: 590px; }
+    @include respond-to(desktop-w-normal) { width: 670px; }
+    @include respond-to(desktop-w-xl) { width: 620px; }
+    .quote { position: relative; width: 60px; height: 42px; background-size: cover; margin-bottom: 40px;
+    }
+    h2 { padding: 0 0 16px; line-height: 56px;
     }
   }
   .img { position: relative; overflow: hidden; width: 100%; height: 188px;
@@ -73,11 +82,38 @@
   .caption-copy { position: relative; width: 100%; font-size: 12px; color: $findyourway-color; padding-top: 12px;
     @include respond-to(tablet-w) { width: 72%; font-size: 16px; padding-top: 20px; line-height: 24px; }
   }
-  .spacer { position: relative; height: 40px;
-    @include respond-to(tablet-w)  { height: 96px; }
+  .authors-title { font-size: 24px; padding-bottom: 32px;
+    @include respond-to(desktop-w-s) { padding-bottom: 40px; }
   }
-  .spacer-small { position: relative; height: 0px;
-    @include respond-to(tablet-w)  { height: 8px; }
+  .authors { display: flex; flex-direction: column; position: relative; width: 100%;
+    @include respond-to(tablet-w) { flex-direction: row; }
+    @include respond-to(desktop-w-s) { width: 590px; }
+    @include respond-to(desktop-w-normal) { width: 670px; }
+    @include respond-to(desktop-w-xl) { width: 620px; }
+    .authors-container { display: flex; position: relative; align-items: center; width: 100%; font-size: 14px; padding: 32px 8px 0 0;
+      @include respond-to(desktop-w-s) { width: 50%; padding: 40px 8px 0 0; }
+      h4 { font-size: 24px; padding-bottom: 12px;
+        @include respond-to(desktop-w-s) { font-size: 21px;  }
+        @include respond-to(desktop-w-normal) { font-size: 24px; }
+        @include respond-to(desktop-w-xl) { font-size: 21px; }
+      }
+      .author-image { width: 72px; height: 72px; border-radius: 50%;
+        @include respond-to(tablet-w) { width: 94px; height: 94px; }
+      }
+    }
+  }
+  .c-tiles { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; padding-top: 48px;
+    @include respond-to(tablet-w) { flex-direction: row; }
+    @include respond-to(desktop-w-s) { width: 590px; }
+    @include respond-to(desktop-w-normal) { width: 670px; }
+    @include respond-to(desktop-w-xl) { width: 620px; }
+    .tile { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; font-size: 14px; line-height: 21px;
+      @include respond-to(tablet-w) { width: 48%; }
+      .tile-img { width: 150px; height: 150px; background: #4BA8F5; border-radius: 50%; margin-bottom: 24px;
+
+      }
+    }
+
   }
   .img-list { position: relative;
     ul { display: flex; height: 188px; margin:0; padding: 0px;
@@ -103,5 +139,16 @@
   .p-tp { padding-top: 16px;
     @include respond-to(tablet-w) { padding-top: 24px; }
     @include respond-to(desktop-w-normal) { padding-top: 32px; }
+  }
+  .pb-5 {
+    padding-bottom: 40px;
+  }
+  .pl-2 {
+    padding-left: 16px;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background: $light-grey;
   }
 }

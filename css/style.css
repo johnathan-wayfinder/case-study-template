@@ -87,6 +87,18 @@ h3 {
 
 h4 {
   font-size: 14px;
+  font-family: "Replica-Bold", sans-serif !important;
+  font-weight: 700;
+  margin: 0px;
+  overflow: visible;
+  padding: 0 0 20px 0; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 26px;
+      padding: 0 0 24px 0; } }
+
+.work-with-us h4 {
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -94,7 +106,7 @@ h4 {
   overflow: visible;
   padding: 20px 0; }
   @media (min-width: 768px) {
-    h4 {
+    .work-with-us h4 {
       font-size: 26px;
       padding: 24px 0; } }
 
@@ -165,7 +177,8 @@ ul li::before {
   width: 100vw;
   height: 100%;
   top: 0px;
-  opacity: 0.06; }
+  opacity: 0.06;
+  display: none; }
   .wf-grid .grid-line {
     position: absolute;
     background: #000;
@@ -492,10 +505,10 @@ ul li::before {
     background: #fff; }
     @media (min-width: 768px) {
       .container .row {
-        width: auto;
         padding-bottom: 88px; } }
     @media (min-width: 1280px) {
       .container .row {
+        width: auto;
         padding-bottom: 96px; } }
   .container .c-standard {
     position: relative;
@@ -592,6 +605,27 @@ ul li::before {
       @media (min-width: 1600px) {
         .container .c-img-split .c-img {
           height: 536px; } }
+  .container .c-quote {
+    position: relative;
+    width: 100%; }
+    @media (min-width: 1280px) {
+      .container .c-quote {
+        width: 590px; } }
+    @media (min-width: 1440px) {
+      .container .c-quote {
+        width: 670px; } }
+    @media (min-width: 1600px) {
+      .container .c-quote {
+        width: 620px; } }
+    .container .c-quote .quote {
+      position: relative;
+      width: 60px;
+      height: 42px;
+      background-size: cover;
+      margin-bottom: 40px; }
+    .container .c-quote h2 {
+      padding: 0 0 16px;
+      line-height: 56px; }
   .container .img {
     position: relative;
     overflow: hidden;
@@ -703,18 +737,96 @@ ul li::before {
         font-size: 16px;
         padding-top: 20px;
         line-height: 24px; } }
-  .container .spacer {
+  .container .authors-title {
+    font-size: 24px;
+    padding-bottom: 32px; }
+    @media (min-width: 1280px) {
+      .container .authors-title {
+        padding-bottom: 40px; } }
+  .container .authors {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    height: 40px; }
+    width: 100%; }
     @media (min-width: 768px) {
-      .container .spacer {
-        height: 96px; } }
-  .container .spacer-small {
+      .container .authors {
+        flex-direction: row; } }
+    @media (min-width: 1280px) {
+      .container .authors {
+        width: 590px; } }
+    @media (min-width: 1440px) {
+      .container .authors {
+        width: 670px; } }
+    @media (min-width: 1600px) {
+      .container .authors {
+        width: 620px; } }
+    .container .authors .authors-container {
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 100%;
+      font-size: 14px;
+      padding: 32px 8px 0 0; }
+      @media (min-width: 1280px) {
+        .container .authors .authors-container {
+          width: 50%;
+          padding: 40px 8px 0 0; } }
+      .container .authors .authors-container h4 {
+        font-size: 24px;
+        padding-bottom: 12px; }
+        @media (min-width: 1280px) {
+          .container .authors .authors-container h4 {
+            font-size: 21px; } }
+        @media (min-width: 1440px) {
+          .container .authors .authors-container h4 {
+            font-size: 24px; } }
+        @media (min-width: 1600px) {
+          .container .authors .authors-container h4 {
+            font-size: 21px; } }
+      .container .authors .authors-container .author-image {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%; }
+        @media (min-width: 768px) {
+          .container .authors .authors-container .author-image {
+            width: 94px;
+            height: 94px; } }
+  .container .c-tiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    height: 0px; }
+    width: 100%;
+    padding-top: 48px; }
     @media (min-width: 768px) {
-      .container .spacer-small {
-        height: 8px; } }
+      .container .c-tiles {
+        flex-direction: row; } }
+    @media (min-width: 1280px) {
+      .container .c-tiles {
+        width: 590px; } }
+    @media (min-width: 1440px) {
+      .container .c-tiles {
+        width: 670px; } }
+    @media (min-width: 1600px) {
+      .container .c-tiles {
+        width: 620px; } }
+    .container .c-tiles .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+      line-height: 21px; }
+      @media (min-width: 768px) {
+        .container .c-tiles .tile {
+          width: 48%; } }
+      .container .c-tiles .tile .tile-img {
+        width: 150px;
+        height: 150px;
+        background: #4BA8F5;
+        border-radius: 50%;
+        margin-bottom: 24px; }
   .container .img-list {
     position: relative; }
     .container .img-list ul {
@@ -785,6 +897,14 @@ ul li::before {
     @media (min-width: 1440px) {
       .container .p-tp {
         padding-top: 32px; } }
+  .container .pb-5 {
+    padding-bottom: 40px; }
+  .container .pl-2 {
+    padding-left: 16px; }
+  .container hr {
+    border: none;
+    height: 2px;
+    background: #86939E; }
 
 .work-with-us {
   display: flex;
@@ -882,6 +1002,14 @@ ul li::before {
   background: url(https://i.pinimg.com/originals/b8/2c/9a/b82c9ac2b0bf462de984ba19563c2463.jpg) no-repeat !important;
   background-size: cover !important;
   background-position: center top !important; }
+
+.img-team-chinmoy-raval {
+  background: url(../img/team/chinmoy-raval.jpg) no-repeat;
+  background-size: cover; }
+
+.img-team-agustin-sanchez {
+  background: url(../img/team/agustin-sanchez.jpg) no-repeat;
+  background-size: cover; }
 
 .img-effect {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.16); }
