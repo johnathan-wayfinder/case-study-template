@@ -1,5 +1,9 @@
 var d = document;
 
+if ( window.innerWidth < 414 ) {
+  Draggable.create('.img-graph', { type:'x', bounds:'.graph' });
+}
+
 function initMobileMenu() {
   TweenLite.to('.wf-logo-color', .4, { fill:'#ffffff', ease:Expo.easeOut });
   TweenLite.to('.hamburger-color', .4, { fill:'#ffffff', ease:Expo.easeOut });

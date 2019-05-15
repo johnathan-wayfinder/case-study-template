@@ -21,7 +21,7 @@
   .menu-hamburger { padding: 22px 20px;
     @include respond-to(tablet-w) { display: none; }
   }
-  .mobile-close { display: none; position: absolute; background: url(../img/close-icon.svg) no-repeat; background-size: contain; background-position: center center; width: 14px; height: 14px; right: 0px; margin: 25px 20px;}
+  .mobile-close { display: none; position: absolute; background: url(../img/svg/close-icon.svg) no-repeat; background-size: contain; background-position: center center; width: 14px; height: 14px; right: 0px; margin: 25px 20px;}
 }
 
 .mobile-menu { display: none; position: fixed; top: 0px; background: $wf-red; width: 100%; height: 100%;
