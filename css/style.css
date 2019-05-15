@@ -1024,6 +1024,8 @@ ul li::before {
     padding-left: 16px; }
   .container .m-pb-0 {
     padding-bottom: 0px !important; }
+  .container .text-color-blue {
+    color: #4BA8F5; }
   .container hr {
     border: none;
     height: 2px;
