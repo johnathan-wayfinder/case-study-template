@@ -178,7 +178,7 @@ ul li::before {
   height: 100%;
   top: 0px;
   opacity: 0.06;
-  display: none; }
+  display: block; }
   .wf-grid .grid-line {
     position: absolute;
     background: #000;
