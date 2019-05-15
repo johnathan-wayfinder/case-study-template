@@ -36,6 +36,6 @@ ul li { margin-bottom: 20px;
   @include respond-to(desktop-w-s) { margin-bottom: 16px; }
   @include respond-to(desktop-w-normal) { margin-bottom: 20px; }
 }
-ul li::before { content: "\2022"; color: $blue-color; font-weight: bold; display: inline-block; width: .8em; margin-left: -.8em;
+ul li::before { content: "\25A0"; color: $blue-color; font-weight: bold; display: inline-block; width: .8em; margin-left: -.8em;
   @include respond-to(tablet-w) { width: 1em; margin-left: -1em; }
 }

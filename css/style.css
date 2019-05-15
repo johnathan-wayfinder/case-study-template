@@ -161,7 +161,7 @@ ul li {
       margin-bottom: 20px; } }
 
 ul li::before {
-  content: "\2022";
+  content: "\25A0";
   color: #4BA8F5;
   font-weight: bold;
   display: inline-block;
@@ -998,6 +998,67 @@ ul li::before {
             height: 536px; } }
       .container .img-list ul li::before {
         display: none; }
+  .container .persona {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .container .persona {
+        flex-direction: row;
+        width: 80%;
+        margin: auto; } }
+    @media (min-width: 1280px) {
+      .container .persona {
+        width: 590px; } }
+    @media (min-width: 1440px) {
+      .container .persona {
+        width: 670px; } }
+    @media (min-width: 1600px) {
+      .container .persona {
+        width: 620px; } }
+    .container .persona .persona-copy {
+      padding-right: 32px; }
+      .container .persona .persona-copy ul {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: normal;
+        list-style: none; }
+        @media (min-width: 768px) {
+          .container .persona .persona-copy ul {
+            font-size: 16px;
+            line-height: normal; } }
+      .container .persona .persona-copy ul li {
+        margin-bottom: 12px;
+        line-height: 21px; }
+        @media (min-width: 1440px) {
+          .container .persona .persona-copy ul li {
+            margin-bottom: 12px; } }
+      .container .persona .persona-copy ul li::before {
+        content: "\25A0";
+        color: #4BA8F5;
+        font-weight: bold;
+        display: inline-block;
+        width: .8em;
+        margin-left: -.8em; }
+        @media (min-width: 768px) {
+          .container .persona .persona-copy ul li::before {
+            width: 1em;
+            margin-left: -1em; } }
+    .container .persona .img-persona {
+      position: relative;
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        .container .persona .img-persona {
+          width: 206px;
+          height: 206px;
+          margin-bottom: 0px; } }
   .container .mobile-order1 {
     order: 1; }
     @media (min-width: 768px) {
@@ -1134,6 +1195,10 @@ ul li::before {
 
 .img-team-agustin-sanchez {
   background: url(../img/team/agustin-sanchez.jpg) no-repeat;
+  background-size: cover; }
+
+.img-susan {
+  background: url(../img/susan.jpg) no-repeat;
   background-size: cover; }
 
 .img-effect {
