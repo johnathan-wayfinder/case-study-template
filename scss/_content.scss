@@ -16,8 +16,8 @@
     @include respond-to(desktop-w-s) { width: 794px; height: 386px; }
     @include respond-to(desktop-w-normal) { width: 900px; height: 440px; }
     @include respond-to(desktop-w-xl) { width: 910px; height: 446px; }
-    .c-split-content { position: relative; width: 100%; padding-bottom: 40px;
-      @include respond-to(tablet-w) { width: 46%; padding-bottom: 0px; }
+    .c-split-content { position: relative; width: 100%; padding-bottom: 32px;
+      @include respond-to(tablet-w) { width: 46%; padding-bottom: 0px; padding-bottom: 40px; }
     }
     .c-split-img { position: relative; width: 100%; height: 280px; background: $cloud-grey;
       @include respond-to(tablet-w) { width: 49%; height: 348px; }
@@ -25,6 +25,26 @@
       @include respond-to(desktop-w-normal) { height: 440px; }
       @include respond-to(desktop-w-xl) { height: 446px; }
     }
+  }
+  .c-split-overlay { display: flex; flex-direction: column; position: relative; width: 100%;
+    @include respond-to(tablet-w) { flex-direction: row; justify-content: space-between; align-items: center; width: 100%; }
+    @include respond-to(desktop-w-s) { width: 942px; align-items: flex-start;  }
+    @include respond-to(desktop-w-normal) { width: 1048px; }
+    .c-split-overlay-content { position: relative; width: 100%; padding-bottom: 32px;
+      @include respond-to(tablet-w) { width: 46%; padding-top: 0px; padding-bottom: 0px; }
+      @include respond-to(desktop-w-s) { padding-top: 48px; padding-bottom: 40px; }
+    }
+    .c-split-img { position: relative; width: 100%; height: 280px; background: $cloud-grey;
+      @include respond-to(tablet-w) { width: 49%; height: 437px; }
+      @include respond-to(desktop-w-s) { height: 650px; }
+      @include respond-to(desktop-w-normal) { height: 650px; }
+    }
+  }
+  .c-split-overlay-margin { margin-top: 36px;
+    @include respond-to(tablet-w) { margin-top: 40px; }
+    @include respond-to(desktop-w-s) { margin-top: -240px; }
+    @include respond-to(desktop-w-normal) { margin-top: -248px; }
+    @include respond-to(desktop-w-xl) { margin-top: -192px; }
   }
   .c-img-split { display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: relative; width: 100%;
     @include respond-to(desktop-w-s) { width: 794px; }
@@ -53,17 +73,17 @@
       @include respond-to(desktop-w-normal) { padding: 0 0 16px; line-height: 56px; }
     }
   }
-  .img { position: relative; overflow: hidden; width: 100%; height: 188px;
-    @include respond-to(tablet-w) { width: 100%; height: 396px; }
-    @include respond-to(desktop-w-s) { width: 794px; height: 447px; }
-    @include respond-to(desktop-w-normal) { width: 900px; height: 506px; }
-    @include respond-to(desktop-w-xl) { width: 910px; height: 512px; }
+  .img { position: relative; overflow: hidden; width: 100%;
+    @include respond-to(tablet-w) { width: 100%; }
+    @include respond-to(desktop-w-s) { width: 794px; }
+    @include respond-to(desktop-w-normal) { width: 900px; }
+    @include respond-to(desktop-w-xl) { width: 910px; }
   }
-  .img-full-w { position: relative; overflow: hidden; width: 112%; height: 210px; margin-left: -20px;
-    @include respond-to(tablet-w) { width: 100%; height: 396px; margin-left: 0px; }
-    @include respond-to(desktop-w-s) { width: 794px; height: 447px; }
-    @include respond-to(desktop-w-normal) { width: 900px; height: 506px; }
-    @include respond-to(desktop-w-xl) { width: 910px; height: 512px; }
+  .img-full-w { position: relative; overflow: hidden; width: 112%; margin-left: -20px;
+    @include respond-to(tablet-w) { width: 100%; margin-left: 0px; }
+    @include respond-to(desktop-w-s) { width: 794px; }
+    @include respond-to(desktop-w-normal) { width: 900px; }
+    @include respond-to(desktop-w-xl) { width: 910px; }
   }
   .img-wide { position: relative; width: 112%; margin-left: -20px;
     @include respond-to(tablet-w) { width: 100%; margin-left: 0px; }
@@ -124,7 +144,7 @@
     @include respond-to(desktop-w-normal) { width: 670px; }
     @include respond-to(desktop-w-xl) { width: 620px; }
     .tile { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; font-size: 14px; line-height: 24px; padding-bottom: 32px;
-      @include respond-to(tablet-w) { width: 48%; padding-bottom: 48px; }
+      @include respond-to(tablet-w) { width: 48%; padding-bottom: 48px; font-size: 16px; line-height: 28px;  }
       .tile-img { height: 120px; background: #4BA8F5; margin-bottom: 24px;
         @include respond-to(tablet-w) { height: 150px; }
       }
@@ -192,10 +212,13 @@
   .mobile-display-none { display: none !important;
     @include respond-to(desktop-w-s) { display: block !important; }
   }
+  .flex-end {
+    @include respond-to(desktop-w-s) { display: flex; flex-direction: column; align-self: flex-end; }
+  }
   .w-100 {
     width: 100%;
   }
-  .p-tp { padding-top: 16px;
+  .pt-p { padding-top: 16px;
     @include respond-to(tablet-w) { padding-top: 24px; }
     @include respond-to(desktop-w-normal) { padding-top: 32px; }
   }

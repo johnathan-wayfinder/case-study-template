@@ -1,4 +1,4 @@
-.wf-grid { position: fixed; width: 100vw; height: 100%; top:0px; opacity: 0.06; display: block; 
+.wf-grid { position: fixed; width: 100vw; height: 100%; top:0px; opacity: 0.06; display: none; 
   .grid-line { position: absolute; background: #000; width: 1px; height: 100%; }
   .wf-grid-left-out { display: none;
     @include respond-to(tablet-w) { }
