@@ -97,10 +97,21 @@ h4 {
       font-size: 26px;
       padding: 0 0 24px 0; } }
 
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  overflow: visible;
+  padding: 0 0 20px 0; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 16px;
+      padding: 0 0 20px 0; } }
+
 .work-with-us h4 {
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0px;
   overflow: visible;
@@ -502,7 +513,18 @@ ul li::before {
     width: 100%;
     position: relative;
     padding-bottom: 40px;
-    background: #fff; }
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     @media (min-width: 768px) {
       .container .row {
         padding-bottom: 88px; } }
@@ -510,6 +532,13 @@ ul li::before {
       .container .row {
         width: auto;
         padding-bottom: 96px; } }
+  .container .row.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
   .container .c-standard {
     position: relative;
     width: 100%; }
@@ -532,20 +561,16 @@ ul li::before {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 348px; } }
+        width: 100%; } }
     @media (min-width: 1280px) {
       .container .c-split {
-        width: 794px;
-        height: 386px; } }
+        width: 794px; } }
     @media (min-width: 1440px) {
       .container .c-split {
-        width: 900px;
-        height: 440px; } }
+        width: 900px; } }
     @media (min-width: 1600px) {
       .container .c-split {
-        width: 910px;
-        height: 446px; } }
+        width: 910px; } }
     .container .c-split .c-split-content {
       position: relative;
       width: 100%;
@@ -756,18 +781,10 @@ ul li::before {
         width: 910px; } }
   .container .img-wide {
     position: relative;
-    width: 112%;
-    margin-left: -20px; }
-    @media (min-width: 768px) {
-      .container .img-wide {
-        width: 100%;
-        margin-left: 0px; } }
+    width: 100%; }
     @media (min-width: 1280px) {
       .container .img-wide {
-        width: 1200px; } }
-    @media (min-width: 1440px) {
-      .container .img-wide {
-        width: 1360px; } }
+        padding: 0 40px; } }
   .container .img-graph {
     position: relative;
     width: 200%;
@@ -999,6 +1016,86 @@ ul li::before {
         @media (min-width: 1440px) {
           .container .c-tiles-wide .tile .tile-img {
             height: 290px; } }
+  .container .c-tiles-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .container .c-tiles-graph {
+        flex-direction: row; } }
+    @media (min-width: 1280px) {
+      .container .c-tiles-graph {
+        width: 794px; } }
+    @media (min-width: 1440px) {
+      .container .c-tiles-graph {
+        width: 900px; } }
+    @media (min-width: 1600px) {
+      .container .c-tiles-graph {
+        width: 910px; } }
+    .container .c-tiles-graph .tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px; }
+      @media (min-width: 768px) {
+        .container .c-tiles-graph .tile {
+          width: 48%;
+          font-size: 16px;
+          line-height: 28px; } }
+      .container .c-tiles-graph .tile .tile-img {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 24px; }
+        @media (min-width: 768px) {
+          .container .c-tiles-graph .tile .tile-img {
+            margin-bottom: 0px; } }
+  .container .c-tiles-roadmap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(75, 168, 245, 0.3); }
+    @media (min-width: 768px) {
+      .container .c-tiles-roadmap {
+        flex-direction: row; } }
+    @media (min-width: 1280px) {
+      .container .c-tiles-roadmap {
+        width: 794px; } }
+    @media (min-width: 1440px) {
+      .container .c-tiles-roadmap {
+        width: 900px; } }
+    @media (min-width: 1600px) {
+      .container .c-tiles-roadmap {
+        width: 910px; } }
+    .container .c-tiles-roadmap .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 16px; }
+      @media (min-width: 768px) {
+        .container .c-tiles-roadmap .tile {
+          padding-bottom: 16px; } }
+      .container .c-tiles-roadmap .tile h5 {
+        width: 100%;
+        padding: 0 20px 20px; }
+      .container .c-tiles-roadmap .tile .tile-img {
+        width: 100%;
+        background: #4BA8F5;
+        margin-bottom: 32px; }
+        .container .c-tiles-roadmap .tile .tile-img h5 {
+          padding: 24px 20px;
+          color: #fff;
+          font-weight: 700; }
   .container .img-list {
     position: relative; }
     .container .img-list ul {
@@ -1112,6 +1209,30 @@ ul li::before {
           width: 206px;
           height: 206px;
           margin-bottom: 0px; } }
+  .container .c-logo-divider {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%; }
+    @media (min-width: 1280px) {
+      .container .c-logo-divider {
+        width: 590px; } }
+    @media (min-width: 1440px) {
+      .container .c-logo-divider {
+        width: 670px; } }
+    @media (min-width: 1600px) {
+      .container .c-logo-divider {
+        width: 620px; } }
+    .container .c-logo-divider .wayfinder-mark {
+      flex-grow: 2;
+      position: relative;
+      background: url(../img/svg/wayfinder-logo.svg) no-repeat;
+      background-size: cover;
+      height: 36px;
+      padding: 0 25px;
+      margin: 0 32px; }
+    .container .c-logo-divider hr {
+      height: 1px; }
   .container .mobile-order1 {
     order: 1; }
     @media (min-width: 768px) {
@@ -1122,6 +1243,12 @@ ul li::before {
     @media (min-width: 1280px) {
       .container .mobile-display-none {
         display: block !important; } }
+  .container .gated-fade {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%); }
   @media (min-width: 1280px) {
     .container .flex-end {
       display: flex;
@@ -1143,39 +1270,47 @@ ul li::before {
     padding-left: 16px; }
   .container .m-pb-0 {
     padding-bottom: 0px !important; }
+  .container .m-mb-0 {
+    margin-bottom: 0px !important; }
   .container .text-color-blue {
     color: #4BA8F5; }
+  .container .fw-700 {
+    font-weight: 700; }
   .container hr {
+    width: 100%;
     border: none;
-    height: 2px;
-    background: #86939E; }
+    height: 1px;
+    background: #acb9c3; }
 
 .work-with-us {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: #f1f1ef;
+  background: #FFEA00;
   width: 100vw;
   height: 248px; }
   @media (min-width: 768px) {
     .work-with-us {
-      height: 280px; } }
+      height: 320px; } }
   .work-with-us .btn {
     position: relative;
     background: transparent;
-    background: url(../img/svg/arrow-btn-contact.svg) no-repeat;
-    background-size: .5em;
-    background-position: 98% 10%;
-    width: 192px;
+    width: 260px;
     margin-top: 80px;
-    border: 4px solid #444;
+    border: 6px solid #444;
+    border-radius: 30px;
     padding: 13px 0;
     color: #444;
     text-align: center;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: .5px;
     cursor: pointer; }
+    @media (min-width: 768px) {
+      .work-with-us .btn {
+        margin-top: 100px;
+        font-size: 18px; } }
   .work-with-us .pt-p {
     padding-top: 16px; }
     @media (min-width: 768px) {
@@ -1184,6 +1319,8 @@ ul li::before {
     @media (min-width: 1440px) {
       .work-with-us .pt-p {
         padding-top: 32px; } }
+  .work-with-us .pl-15 {
+    padding-left: 12px; }
 
 .img-progress {
   background: url(https://www.indiewire.com/wp-content/uploads/2016/07/samuel-l-jackson-in-pulp-fiction.jpg) no-repeat;
@@ -1256,7 +1393,7 @@ ul li::before {
   background-size: cover; }
 
 .img-susan {
-  background: url(../img/susan.jpg) no-repeat;
+  background: url(../img/walgreens/susan.jpg) no-repeat;
   background-size: cover; }
 
 .img-effect {
