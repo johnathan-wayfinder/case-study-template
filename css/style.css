@@ -513,18 +513,7 @@ ul li::before {
     width: 100%;
     position: relative;
     padding-bottom: 40px;
-    background: #fff;
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
+    background: #fff; }
     @media (min-width: 768px) {
       .container .row {
         padding-bottom: 88px; } }

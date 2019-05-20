@@ -2,17 +2,18 @@
   @include respond-to(tablet-w) { padding: 80px 32px 0; }
   @include respond-to(desktop-w-s) { padding: 96px 0 0 0; }
   @include respond-to(desktop-w-xl) { padding: 88px 0 0 0; }
-  .row { width: 100%; position: relative; padding-bottom: 40px; background: #fff; opacity: 0;
-  -webkit-transform: scale(0.9);
-     -moz-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-       -o-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all .5s ease-in-out;
-     -moz-transition: all .5s ease-in-out;
-      -ms-transition: all .5s ease-in-out;
-       -o-transition: all .5s ease-in-out;
-          transition: all .5s ease-in-out;
+  .row { width: 100%; position: relative; padding-bottom: 40px; background: #fff;
+  // opacity: 0;
+  // -webkit-transform: scale(0.9);
+  //    -moz-transform: scale(0.9);
+  //     -ms-transform: scale(0.9);
+  //      -o-transform: scale(0.9);
+  //         transform: scale(0.9);
+  // -webkit-transition: all .5s ease-in-out;
+  //    -moz-transition: all .5s ease-in-out;
+  //     -ms-transition: all .5s ease-in-out;
+  //      -o-transition: all .5s ease-in-out;
+  //         transition: all .5s ease-in-out;
     @include respond-to(tablet-w) { padding-bottom: 88px; }
     @include respond-to(desktop-w-s) { width: auto; padding-bottom: 96px; }
   }

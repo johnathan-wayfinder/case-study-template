@@ -39,29 +39,18 @@ var sceneSketch = new ScrollMagic.Scene({triggerElement:'.img-strategy', duratio
 								//.addIndicators(true)
     						.addTo(controller);
 
-// new ScrollMagic.Scene({
-// 							triggerElement: ".row",
-// 							triggerHook: 0.9, // show, when scrolled 10% into view
-// 							//duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-// 							offset: 50, // move trigger to center of element
-//               reverse: false
-// 						})
-// 						.setClassToggle(".row", "visible") // add class to reveal
-// 						.addIndicators(true) // add indicators (requires plugin)
-// 						.addTo(controller);
-
-var revealElements = document.getElementsByClassName("row");
-		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-			new ScrollMagic.Scene({
-								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-								offset: 50,												 // start a little later
-								triggerHook: 0.9,
-                reverse: false
-							})
-							.setClassToggle(revealElements[i], "visible") // add class toggle
-							//.addIndicators({name: "row " + (i+1) }) // add indicators (requires plugin)
-							.addTo(controller);
-		}
+// var revealElements = document.getElementsByClassName("row");
+// 		for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+// 			new ScrollMagic.Scene({
+// 								triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+// 								offset: 50,												 // start a little later
+// 								triggerHook: 0.9,
+//                 reverse: false
+// 							})
+// 							.setClassToggle(revealElements[i], "visible") // add class toggle
+// 							//.addIndicators({name: "row " + (i+1) }) // add indicators (requires plugin)
+// 							.addTo(controller);
+// 		}
 
 
 
