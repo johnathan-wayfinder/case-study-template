@@ -92,6 +92,12 @@
       @include respond-to(desktop-w-normal) { padding: 0 0 16px; line-height: 56px; }
     }
   }
+  .c-hr { width: 100%;
+    @include respond-to(desktop-w-s) { width: 590px; }
+    @include respond-to(desktop-w-normal) { width: 670px; }
+    @include respond-to(desktop-w-xl) { width: 620px; }
+  }
+  .c-hr-full { width: 100%; }
   .img { position: relative; overflow: hidden; width: 100%;
     @include respond-to(tablet-w) { width: 100%; }
     @include respond-to(desktop-w-s) { width: 794px; }
@@ -282,5 +288,11 @@
   .m-mb-0 { margin-bottom: 0px !important; }
   .text-color-blue { color: $blue-color; }
   .fw-700 { font-weight: 700; }
+  .img-mobile {
+    @include respond-to(tablet-w) { display: none; }
+  }
+  .img-desktop { display: none;
+    @include respond-to(tablet-w) { display: block; }
+  }
   hr { width: 100%; border: none; height: 1px; background: #acb9c3; }
 }

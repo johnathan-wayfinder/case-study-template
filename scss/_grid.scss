@@ -1,5 +1,5 @@
-.wf-grid { position: fixed; width: 100vw; height: 100%; top:0px; opacity: 0.06; display: none; 
-  .grid-line { position: absolute; background: #000; width: 1px; height: 100%; }
+// .wf-grid { position: fixed; width: 100vw; height: 100%; top:0px; opacity: 0.06; display: block;
+  .grid-line { position: fixed; background: #000; width: 1px; height: 100%; top: 0px; opacity: .06; }
   .wf-grid-left-out { display: none;
     @include respond-to(tablet-w) { }
     @include respond-to(desktop-w-s) { display: block; left: 50%; margin-left: -620px; }
@@ -25,4 +25,4 @@
     @include respond-to(desktop-w-normal) { margin-right: -700px; }
     @include respond-to(desktop-w-xl) { margin-right: -940px; }
   }
-}
+// }
