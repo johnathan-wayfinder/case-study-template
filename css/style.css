@@ -86,7 +86,7 @@ h3 {
       padding: 0 0 24px 0; } }
 
 h4 {
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Replica-Bold", sans-serif !important;
   font-weight: 700;
   margin: 0px;
@@ -98,7 +98,7 @@ h4 {
       padding: 0 0 24px 0; } }
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0px;
   overflow: visible;
@@ -109,7 +109,7 @@ h5 {
       padding: 0 0 20px 0; } }
 
 .work-with-us h4 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -122,13 +122,13 @@ h5 {
       padding: 24px 0; } }
 
 p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 30px;
   margin: 0px; }
   @media (min-width: 768px) {
     p {
-      font-size: 16px;
-      line-height: 28px; } }
+      font-size: 18px;
+      line-height: 30px; } }
   @media (min-width: 1280px) {
     p {
       line-height: 34px; } }
@@ -140,18 +140,22 @@ p {
       font-size: 21px; } }
 
 hr {
-  margin: 0; }
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 96px 0; }
 
 ul {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 30px;
   list-style: none; }
   @media (min-width: 768px) {
     ul {
-      font-size: 16px;
-      line-height: 28px; } }
+      font-size: 18px;
+      line-height: 30px; } }
   @media (min-width: 1280px) {
     ul {
       line-height: 34px; } }
@@ -424,8 +428,8 @@ ul li::before {
         width: 910px;
         padding: 232px 0 160px; } }
     .header .case-study p {
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 18px;
+      line-height: 30px;
       padding: 20px 0 24px; }
       @media (min-width: 768px) {
         .header .case-study p {
@@ -499,7 +503,7 @@ ul li::before {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 48px 20px 0; }
+  padding: 48px 32px 0; }
   @media (min-width: 768px) {
     .container {
       padding: 80px 32px 0; } }
@@ -766,8 +770,8 @@ ul li::before {
   .container .img-full-w {
     position: relative;
     overflow: hidden;
-    width: 112%;
-    margin-left: -20px; }
+    width: 121%;
+    margin-left: -32px; }
     @media (min-width: 768px) {
       .container .img-full-w {
         width: 100%;
@@ -944,15 +948,15 @@ ul li::before {
       align-items: center;
       position: relative;
       width: 100%;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 30px;
       padding-bottom: 32px; }
       @media (min-width: 768px) {
         .container .c-tiles .tile {
           width: 48%;
           padding-bottom: 48px;
-          font-size: 16px;
-          line-height: 28px; } }
+          font-size: 18px;
+          line-height: 30px; } }
       .container .c-tiles .tile .tile-img {
         height: 120px;
         background: #4BA8F5;
@@ -1042,8 +1046,8 @@ ul li::before {
       justify-content: space-between;
       position: relative;
       width: 100%;
-      font-size: 14px;
-      line-height: 24px; }
+      font-size: 18px;
+      line-height: 30px; }
       @media (min-width: 768px) {
         .container .c-tiles-graph .tile {
           width: 48%;
@@ -1176,16 +1180,12 @@ ul li::before {
       .container .persona .persona-copy ul {
         margin: 0;
         padding: 0;
-        font-size: 14px;
+        font-size: 16px;
         line-height: normal;
         list-style: none; }
-        @media (min-width: 768px) {
-          .container .persona .persona-copy ul {
-            font-size: 16px;
-            line-height: normal; } }
       .container .persona .persona-copy ul li {
         margin-bottom: 12px;
-        line-height: 21px; }
+        line-height: 28px; }
         @media (min-width: 1440px) {
           .container .persona .persona-copy ul li {
             margin-bottom: 12px; } }
@@ -1194,8 +1194,8 @@ ul li::before {
         color: #4BA8F5;
         font-weight: bold;
         display: inline-block;
-        width: .8em;
-        margin-left: -.8em; }
+        width: .9em;
+        margin-left: -.9em; }
         @media (min-width: 768px) {
           .container .persona .persona-copy ul li::before {
             width: 1em;
@@ -1303,6 +1303,11 @@ ul li::before {
   @media (min-width: 768px) {
     .work-with-us {
       height: 320px; } }
+  .work-with-us h4 {
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .work-with-us h4 {
+        font-size: 18px; } }
   .work-with-us .btn {
     position: relative;
     background: transparent;

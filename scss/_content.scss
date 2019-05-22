@@ -1,4 +1,4 @@
-.container { display: flex; flex-direction: column; align-items: center; position: relative; padding: 48px 20px 0;
+.container { display: flex; flex-direction: column; align-items: center; position: relative; padding: 48px 32px 0;
   @include respond-to(tablet-w) { padding: 80px 32px 0; }
   @include respond-to(desktop-w-s) { padding: 96px 0 0 0; }
   @include respond-to(desktop-w-xl) { padding: 88px 0 0 0; }
@@ -104,7 +104,7 @@
     @include respond-to(desktop-w-normal) { width: 900px; }
     @include respond-to(desktop-w-xl) { width: 910px; }
   }
-  .img-full-w { position: relative; overflow: hidden; width: 112%; margin-left: -20px;
+  .img-full-w { position: relative; overflow: hidden; width: 121%; margin-left: -32px;
     @include respond-to(tablet-w) { width: 100%; margin-left: 0px; }
     @include respond-to(desktop-w-s) { width: 794px; }
     @include respond-to(desktop-w-normal) { width: 900px; }
@@ -166,8 +166,8 @@
     @include respond-to(desktop-w-s) { width: 590px; }
     @include respond-to(desktop-w-normal) { width: 670px; }
     @include respond-to(desktop-w-xl) { width: 620px; }
-    .tile { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; font-size: 14px; line-height: 24px; padding-bottom: 32px;
-      @include respond-to(tablet-w) { width: 48%; padding-bottom: 48px; font-size: 16px; line-height: 28px;  }
+    .tile { display: flex; flex-direction: column; align-items: center; position: relative; width: 100%; font-size: 18px; line-height: 30px; padding-bottom: 32px;
+      @include respond-to(tablet-w) { width: 48%; padding-bottom: 48px; font-size: 18px; line-height: 30px;  }
       .tile-img { height: 120px; background: #4BA8F5; margin-bottom: 24px;
         @include respond-to(tablet-w) { height: 150px; }
       }
@@ -199,7 +199,7 @@
     @include respond-to(desktop-w-s) { width: 794px; }
     @include respond-to(desktop-w-normal) { width: 900px; }
     @include respond-to(desktop-w-xl) { width: 910px; }
-    .tile { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; font-size: 14px; line-height: 24px;
+    .tile { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; font-size: 18px; line-height: 30px;
       @include respond-to(tablet-w) { width: 48%; font-size: 16px; line-height: 28px;  }
       .tile-img { width: 100%; margin-top: 24px; margin-bottom: 24px;
         @include respond-to(tablet-w) { margin-bottom: 0px; }
@@ -240,13 +240,12 @@
     @include respond-to(desktop-w-normal) { width: 670px; }
     @include respond-to(desktop-w-xl) { width: 620px; }
     .persona-copy { padding-right: 32px;
-      ul { margin: 0; padding: 0; font-size: 14px; line-height: normal; list-style: none;
-        @include respond-to(tablet-w) { font-size: 16px; line-height: normal; }
+      ul { margin: 0; padding: 0; font-size: 16px; line-height: normal; list-style: none;
       }
-      ul li { margin-bottom: 12px; line-height: 21px;
+      ul li { margin-bottom: 12px; line-height: 28px;
         @include respond-to(desktop-w-normal) { margin-bottom: 12px; }
       }
-      ul li::before { content: "\25A0"; color: $blue-color; font-weight: bold; display: inline-block; width: .8em; margin-left: -.8em;
+      ul li::before { content: "\25A0"; color: $blue-color; font-weight: bold; display: inline-block; width: .9em; margin-left: -.9em;
         @include respond-to(tablet-w) { width: 1em; margin-left: -1em; }
       }
     }

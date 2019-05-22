@@ -11,26 +11,26 @@ h2 { font-size: 28px; font-family: "Replica-Bold", sans-serif !important; font-w
 h3 { font-size: 21px; font-family: "Replica-Bold", sans-serif !important; font-weight: 700; margin:0px; overflow:visible; padding:0 0 20px 0;
   @include respond-to(tablet-w)  { font-size: 32px; padding:0 0 24px 0; }
 }
-h4 { font-size: 14px; font-family: "Replica-Bold", sans-serif !important; font-weight: 700; margin:0px; overflow:visible; padding:0 0 20px 0;
+h4 { font-size: 18px; font-family: "Replica-Bold", sans-serif !important; font-weight: 700; margin:0px; overflow:visible; padding:0 0 20px 0;
   @include respond-to(tablet-w)  { font-size: 26px; padding:0 0 24px 0; }
 }
-h5 { font-size: 14px; font-weight: 400; margin:0px; overflow:visible; padding:0 0 20px 0;
+h5 { font-size: 18px; font-weight: 400; margin:0px; overflow:visible; padding:0 0 20px 0;
   @include respond-to(tablet-w) { font-size: 16px; padding:0 0 20px 0; }
 }
 .work-with-us {
-  h4 { font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin:0px; overflow:visible; padding:20px 0;
+  h4 { font-size: 18px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin:0px; overflow:visible; padding:20px 0;
     @include respond-to(tablet-w)  { font-size: 26px; padding:24px 0; }
   }
 }
-p { font-size: 14px; line-height: 24px; margin:0px;
-  @include respond-to(tablet-w) { font-size: 16px; line-height: 28px; }
+p { font-size: 18px; line-height: 30px; margin:0px;
+  @include respond-to(tablet-w) { font-size: 18px; line-height: 30px; }
   @include respond-to(desktop-w-s) { line-height: 34px; }
   @include respond-to(desktop-w-normal) { font-size: 18px; }
   @include respond-to(desktop-w-xl) { font-size: 21px; }
 }
-hr { margin: 0; }
-ul { margin: 0; padding: 0; font-size: 14px; line-height: 24px; list-style: none;
-  @include respond-to(tablet-w) { font-size: 16px; line-height: 28px; }
+hr { width: 100%; border: none; height: 1px; background: #eee; margin:96px 0; }
+ul { margin: 0; padding: 0; font-size: 18px; line-height: 30px; list-style: none;
+  @include respond-to(tablet-w) { font-size: 18px; line-height: 30px; }
   @include respond-to(desktop-w-s) { line-height: 34px; }
   @include respond-to(desktop-w-normal) { font-size: 18px; }
   @include respond-to(desktop-w-xl) { font-size: 21px; }
